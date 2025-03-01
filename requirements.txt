@@ -1,0 +1,9 @@
+from flask import Flask, render_template, request, jsonify
+import pickle
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+import re
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+import nltk
+nltk.download('stopwords')
